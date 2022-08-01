@@ -24,7 +24,7 @@ func main() {
 	}
 
 	db.InitDB()
-	// db.Migrate()
+	db.Migrate()
 
 	srv := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: &graph.Resolver{}}))
 

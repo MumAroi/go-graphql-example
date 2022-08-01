@@ -13,7 +13,7 @@ var Db *sql.DB
 
 //InitDB initalises database session
 func InitDB() {
-	db, err := sql.Open("mysql", "paramas:paramas123@tcp(db4free.net)/graphql_demo")
+	db, err := sql.Open("mysql", "username:password@tcp(db4free.net)/graphql_demo")
 	if err != nil {
 		log.Panic(err)
 	}
